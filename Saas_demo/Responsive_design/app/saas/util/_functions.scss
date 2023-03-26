@@ -1,0 +1,21 @@
+@use 'sass:math';
+
+//converting pixels to rem
+@function rem($pixels){
+    @if math.is-unitless($pixels){
+        @return math.div($pixels,16) + rem;
+    }
+    @else{
+        @error "don't use units when using the rem() function";
+    }
+}
+
+//converting pixels to em
+@function em($pixels){
+    @if math.is-unitless($pixels){
+        @return math.div($pixels,16) + em;
+    }
+    @else{
+        @error "don't use units when using the em() function";
+    }
+}

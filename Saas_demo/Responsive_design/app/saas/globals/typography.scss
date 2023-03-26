@@ -1,0 +1,15 @@
+@use '../util/functions' as fun;
+
+h1,h2.h3{
+    font-weight:700;
+    line-height:1.1;
+    margin-top:0;
+    font-size:clamp(fun.rem(28),fun.rem(16) + 2vw, fun.rem(40));
+}
+p{
+    margin-top:0;
+    font-size:clamp(fun.rem(16),fun.rem(16) + 0.5vw, fun.rem(20));
+}
+a,a:visited,a:active{
+    text-transform: none;
+}

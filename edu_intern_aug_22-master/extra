@@ -1,0 +1,302 @@
+https://code.visualstudio.com/ (install)
+https://nodejs.org/en/ (install)
+https://git-scm.com/downloads (install)
+https://github.com/ (Create Account)
+https://github.com/Aakashdeveloper (Follow)
+https://www.youtube.com/developerfunnel (Subscribe)
+https://stackoverflow.com/ (Create Account)
+https://www.linkedin.com/ (Create Account)
+
+7 live application
+
+1 > Zomato  (Instructore)
+2 > Profile Website (Yourself)  
+3 > Your Choice (Yourself) 40%
+
+(Mini Project 50% already completed) 10%
+4 > Netflix Homepage
+5 > Weather App in JS
+6 > NodejS video streaming app
+7 > Covid tracker with react
+
+7-8 Assignments 15%
+7-8 Task 15%
+
+20% Class performance
+
+100%
+
+HTML  >>>> Raw Structure
+CSS   >>>> design Purpose (look and feel)
+Bootstrap >>>> Responsive (website fit on all screen)
+
+JavaScript
+NodejS+express
+MongoDb
+React
+
+Login/Logout
+PaymentGateway
+Github
+
+Deployment
+> Heroko
+> Netlify
+
+///////////////////
+2 Types
+1> Learning Classes (Sat sun 4-6)
+2> Doubt Class (wed Fri 8-9)
+
+>>> Coding >>>> Developer Funnel
+>>> Admin (Recording,link of class, assignment link) >>>>> Hari
+
+HTML > wrapper Main Tag
+Head > Use for Linking Purpose (Css,JS)
+     > Except title (nothing which is visble to user)
+Body > Whatever visible to user is part of body
+
+Block Level
+> They always start from new line
+> Take whole width of screen
+> H1, P , div
+
+Inline element
+> They start in same line
+> only take space which is required
+> A, img, span
+
+href > hyperRefernce
+src > source
+
+https://www.w3schools.com/tags/tag_hn.asp
+
+Name
+Image
+About you
+Skill
+Hobbies
+Map
+Footer
+Social Link
+
+
+
+//////////
+inline
+styleTag
+stylesheet
+
+inline>styleTag>stylesheet
+
+#inline
+{
+     color:red,
+     font-size:30px
+}
+
+#styletag
+{
+    font-size:40px;
+    border:2px solid black
+}
+#stylesheet
+{
+     color:green
+     border:5px solid black
+     width:40%
+}
+
+{
+    color:red,
+    font-size:30px ,
+    border:2px solid black,
+    width:40%
+}
+////////
+id > unique element target
+   > we use # for ids
+class > to provide same proprty to group of element
+     > we use . for classname
+tagname > to target particular tag on page
+
+solid
+dotted
+double
+groove
+dashed
+
+///////////
+position> Absolute & Relative
+
+
+Botstrap
+Bs3
+xs < 768px;
+sm > 768px
+md > 992px
+lg > 1200px
+
+Bs4
+col- < 576px
+sm > 576px;
+md > 768px;
+lg > 992px;
+xl > 1200px
+
+Bs5
+col- < 576px
+sm > 576px;
+md > 768px;
+lg > 992px;
+xl > 1200px
+xxl > 1400px
+
+Eval for calculator
+
+
+https://github.com/anishLearnsToCode/hackerrank-10-days-of-javascript
+
+
+NodeJs
+> Nodejs is a backend
+
+> Single threaded, async, non blocking I/O
+
+
+2,148,639
+npm> Node Package Manger
+
+
+////////package.json///////
+> this is the entry point to the app
+> it contains MetaData (Name,version,description)
+> All the packages we use in the app
+> Script (start, build,test)
+
+// Step to generate package.json
+** NodeJs must be installed in laptop
+> Go inside the folder using cmd
+> npm init
+> Answer All the questions
+> Type "yes"
+
+
+// Step to install package
+** NodeJs must be installed in laptop
+> Go inside the folder using cmd
+> npm i packageName/ npm install packageName
+
+global dependency
+> which will install in laptop irrespative of any folder
+> Mainly package use for the purpose of starting the app
+
+> open the cmd as Admin
+> npm i -g packageName
+
+npm i -g nodemon
+
+
+C > Create  (POST)
+R > Read    (GET)
+U > Update  (PUT)
+D > Delete  (DELETE)
+
+
+https://www.mongodb.com/try/download/community
+
+
+params
+> What we pass after /
+> We need to define
+> Should be use for 1 or 2 value
+> If define than complusory to pass
+
+queryParams
+> What we pass after ?
+> No need to define
+> For multiple value 
+> Not complusory to pass
+
+https://account.mongodb.com/account/login
+https://dashboard.paytm.com/
+
+
+render.com
+
+React > Frontend framework that help to single page application using
+component based structure
+
+/////////////////////////////////
+Step to generate React App
+///////////////////////////////////////
+> open the cmd go inside the folder
+> npx create-react-app firstapp
+
+////////////
+class
+> Logical Component
+> We can maintain the state
+> maintain logical, call api and even display
+funtional
+> Dumb Component
+> We Cannot maintain State
+> Mainly use for display
+
+hooks
+
+
+////////
+State
+> Act like a local variable
+> Every component can have its own state
+> We can update the value of state
+> Any Data interaction will happen through state 
+
+Props
+> Help to transfer data between 2 nested component
+> We cannot update value of props
+
+parent > child (props)
+child > parent (props with function)
+
+
+npm i react-router-dom
+npm i react-router-dom@5.3.0
+
+//////
+history > redirection
+location > queryParams
+match > Params
+
+
+
+(get) cityname >           http://3.17.216.66:4000/location
+(get) restwrtcity >        http://3.17.216.66:4000/restaurant?stateId=1
+(get) quickSearch>         http://3.17.216.66:4000/quicksearch
+
+
+(get) onbasisofMeal >      http://3.17.216.66:4000/restaurant?mealtype_id=
+(get) cuisinefilter >      http://3.17.216.66:4000/filter/4?cuisine=1
+(get) costfilter >         http://3.17.216.66:4000/filter/1?hcost=1000&lcost=500
+
+(get) restdetails >        http://3.17.216.66:4000/details/1
+(get) menu >               http://3.17.216.66:4000/menu/1
+
+(post) orderspage >        http://3.17.216.66:4000/menuItem
+                           body [1,4,5]
+(post)placeOrder >        
+
+(get) allorder>            
+       
+(get) restaurants>         http://3.17.216.66:4000/restaurants
+https://developerpayment.herokuapp.com/paynow
+
+
+
+//dummy api
+* install global packege
+> run cmd as admin
+> npm i -g json-server
+
+> json-server --watch order.json --port 8700

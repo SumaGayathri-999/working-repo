@@ -1,0 +1,78 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2.h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+  font-size: clamp(1.75rem, 1rem + 2vw, 2.5rem);
+}
+
+p {
+  margin-top: 0;
+  font-size: clamp(1rem, 1rem + 0.5vw, 1.25rem);
+}
+
+a, a:visited, a:active {
+  text-transform: none;
+}
+
+:root {
+  --background-color: rgb(167, 5, 67);
+}
+
+.grid__widget.yellow, .grid__widget.red, .grid__widget.green {
+  padding: 1.25rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  width: min(100% - 2.5rem, 62.5rem);
+  margin-inline: auto;
+  gap: 2rem;
+}
+.grid__main, .grid__aside {
+  padding: 3em;
+}
+.grid__main {
+  background-color: pink;
+}
+.grid__aside {
+  background-color: violet;
+}
+.grid__widget.green {
+  background-color: green;
+}
+.grid__widget.red {
+  background-color: red;
+}
+.grid__widget.yellow {
+  background-color: yellow;
+}
+@media (max-width: 43.74875em) {
+  .grid {
+    text-align: center;
+  }
+}
+@media (min-width: 56.25em) {
+  .grid {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+  }
+}/*# sourceMappingURL=style.css.map */

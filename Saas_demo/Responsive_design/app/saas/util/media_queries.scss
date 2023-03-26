@@ -1,0 +1,26 @@
+@use 'functions' as fun;
+
+//saas map for 700px, 900px, 1440px ---- above
+$breakpoint-up : (
+  "medium" :fun.em(700),
+  "large":fun.em(900),
+  "xlarge":fun.em(1440)
+);
+// saas map for 699.98px, 899.98px, 1439.98px
+$breakpoint-down : (
+  "small" :fun.em(699.98),
+  "medium":fun.em(899.98),
+  "large":fun.em(1439.98)
+);
+//saas mixin 
+@mixin upscale($size){
+    @media(min-width : map-get($breakpoint-up,$size)){
+        @content;
+    }
+}
+
+@mixin lowscale($size){
+    @media(max-width: map-get($breakpoint-down,$size)){
+        @content
+    }
+}

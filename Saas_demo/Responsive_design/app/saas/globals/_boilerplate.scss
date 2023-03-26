@@ -1,0 +1,15 @@
+@use '../util/saas_variables.scss' as util;
+html{
+    box-sizing:border-box;
+    font-size:100%;
+}
+*,*::after,*::before{
+    box-sizing:inherit;
+}
+body{
+    margin:0;
+    padding:0;
+    background-color: var(--background-color);
+    color:util.$text-color;
+    font-family:Arial, Helvetica, sans-serif;
+}

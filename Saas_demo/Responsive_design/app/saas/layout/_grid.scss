@@ -1,0 +1,47 @@
+@use '../util/media_queries.scss' as md;
+@use '../util/functions' as fun;
+//mobil first website
+%widget{
+    padding:fun.rem(20);
+}
+.grid{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    width:min(100% - fun.rem(40),fun.rem(1000));
+    margin-inline:auto;
+    gap:2rem;
+    &__main,&__aside{
+        padding:3em;
+    }
+    &__main{
+        background-color:pink;
+    }
+    &__aside{
+        background-color:violet;
+    }
+    &__widget.green{
+        @extend %widget;
+        background-color: green;
+    }
+    &__widget.red{
+        @extend %widget;
+        background-color: red;
+    }
+    &__widget.yellow{
+        @extend %widget;
+        background-color: yellow;
+    }
+    // @media(min-width:900px){
+    //     grid-template-columns: 2fr 1fr;
+    //     grid-template-rows: auto;
+    // }
+    @include md.lowscale(small){
+        text-align:center;
+    }
+    @include md.upscale(large){
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto;
+    }
+
+}

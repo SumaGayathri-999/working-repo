@@ -1,0 +1,15 @@
+h1, h2.h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+  font-size: clamp(1.75rem, 1rem + 2vw, 2.5rem);
+}
+
+p {
+  margin-top: 0;
+  font-size: clamp(1rem, 1rem + 0.5vw, 1.25rem);
+}
+
+a, a:visited, a:active {
+  text-transform: none;
+}/*# sourceMappingURL=typography.css.map */
