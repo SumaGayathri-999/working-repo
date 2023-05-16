@@ -13,3 +13,4 @@ function reducer(accumulator,value){
 console.log(maximum);
 
 //output : 20
+

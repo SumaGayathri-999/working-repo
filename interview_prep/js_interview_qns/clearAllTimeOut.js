@@ -4,6 +4,7 @@ let timers = [];
 const mySetTimeOut = (fn,delay)=>{
     const timerId = setTimeout(fn,delay);
     timers.push(timerId);
+    return timerId;
 }
 const clearAllTimeOut = ()=>{
    while(timers.length){

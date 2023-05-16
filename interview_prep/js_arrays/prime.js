@@ -1,14 +1,14 @@
 let primes = [];
-for(i=1; i<= 100 ; i++){
-    let count =0;
+for(i=1; i <=100; i++){
+    count = 0;
    for(j=2; j<=i-1; j++){
-     if(i%j === 0){
-      count++;
-     }
+    if(i%j === 0 ){
+       count++;
+       break;
+    }
    }
    if(count==0){
-     primes.push(i);
+      primes.push(i);
    }
 }
-console.log(primes);n
-t
+console.log(primes);

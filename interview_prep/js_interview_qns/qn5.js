@@ -10,3 +10,4 @@ if(lower === reverseStr){
 else{
     console.log("it is not palindrome");
 }
+
